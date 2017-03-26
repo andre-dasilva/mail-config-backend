@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is the log4j2 File that is used for development -->
+<Configuration status="OFF">
+	<Properties>
+		<Property name="logPath">C:/Users/andre/Documents/eclipse_workspace/Temp</Property>
+		<Property name="logPattern">%d{yyyy-MM-dd HH:mm:ss} [%-5level] %logger{36}: %msg%n</Property>
+	</Properties>
+	<Appenders>
+		<!-- Console Configuration -->
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout>
+				<pattern>${logPattern}</pattern>
+			</PatternLayout>
+		</Console>
+		<!-- File Configuration -->
+		<RollingFile name="RollingFile"
+			fileName="${logPath}/mailconfig.log"
+			filePattern="${logPath}/mailconfig-${date:yyyy-MM-dd}.log">
+			<PatternLayout>
+				<pattern>${logPattern}</pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10 MB" />
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="org.dasilva.webapp.mail" level="debug">
+			<AppenderRef ref="RollingFile" />
+		</Logger>
+		<Root level="debug">
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</Configuration>

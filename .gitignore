@@ -1,0 +1,32 @@
+# Eclipse #
+*.pydevproject
+.classpath
+.project
+.metadata
+.loadpath
+.cproject
+.buildpath
+local.properties
+*.tmp
+*.bak
+*.swp
+*~.nib
+*.launch
+.settings/
+.externalToolBuilders/
+tmp/
+
+# Mac OS
+.DS_Store
+
+# Maven #
+build/
+target/
+
+# Intellij #
+.idea/
+*.iml
+*.iws
+
+# Java #
+*.class

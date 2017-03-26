@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		   targetNamespace="http://www.dasilva.org/MailConfig" 
+		   xmlns:tns="http://www.dasilva.org/MailConfig" 
+		   elementFormDefault="qualified">
+	
+	<xs:complexType name="ConfigBody">
+	    <xs:sequence>
+	        <xs:element name="mail" type="xs:string"/>
+	        <xs:element name="secure" type="xs:string"/>
+	        <xs:element name="port" type="xs:int"/>
+	    </xs:sequence>
+	</xs:complexType> 
+	
+	<xs:element name="mail_config">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="provider" type="xs:string" />
+                <xs:element name="smtp" type="tns:ConfigBody" />
+                <xs:element name="imap" type="tns:ConfigBody" />
+                <xs:element name="pop3" type="tns:ConfigBody" />
+            </xs:sequence>
+        </xs:complexType>
+	</xs:element>
+	
+</xs:schema>
