@@ -2,7 +2,7 @@
 <!-- This is the log4j2 File that is used for development -->
 <Configuration status="OFF">
 	<Properties>
-		<Property name="logPath">C:/Users/andre/Documents/eclipse_workspace/Temp</Property>
+		<Property name="logPath">logs</Property>
 		<Property name="logPattern">%d{yyyy-MM-dd HH:mm:ss} [%-5level] %logger{36}: %msg%n</Property>
 	</Properties>
 	<Appenders>

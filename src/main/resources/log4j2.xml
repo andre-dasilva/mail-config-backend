@@ -2,7 +2,7 @@
 <!-- This is the log4j2 File that is used for production -->
 <Configuration status="OFF">
 	<Properties>
-		<Property name="logPath">/opt/tomcat8/logs</Property>
+		<Property name="logPath">${sys:catalina.home}/logs</Property>
 		<Property name="logPattern">%d{yyyy-MM-dd HH:mm:ss} [%-5level] %logger{36}: %msg%n</Property>
 	</Properties>
 	<Appenders>

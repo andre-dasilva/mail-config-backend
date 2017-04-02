@@ -17,7 +17,6 @@
         <excludes>
           <exclude>**/*.java</exclude>
           <exclude>log4j2-test.xml</exclude>
-          <exclude>snippets.txt</exclude>
         </excludes>
       </resource>
       <resource>
@@ -35,6 +34,20 @@
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
+      </plugin>
+      <plugin>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-maven-plugin</artifactId>
+          <version>9.4.2.v20170220</version>
+          <configuration>
+              <scanIntervalSeconds>5</scanIntervalSeconds>
+              <systemProperties>
+                  <systemProperty>
+                      <name>log4j.configurationFile</name>
+                      <value>log4j2-test.xml</value>
+                  </systemProperty>
+              </systemProperties>
+          </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>

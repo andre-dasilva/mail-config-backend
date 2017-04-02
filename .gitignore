@@ -30,3 +30,4 @@ target/
 
 # Java #
 *.class
+logs/

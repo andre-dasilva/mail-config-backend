@@ -5,10 +5,10 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.bson.types.ObjectId;
-import org.dasilva.webapp.mail.bean.IMAP;
+import org.dasilva.webapp.mail.bean.mail.IMAP;
 import org.dasilva.webapp.mail.bean.MailConfig;
-import org.dasilva.webapp.mail.bean.POP3;
-import org.dasilva.webapp.mail.bean.SMTP;
+import org.dasilva.webapp.mail.bean.mail.POP3;
+import org.dasilva.webapp.mail.bean.mail.SMTP;
 import org.dasilva.webapp.mail.db.MorphiaServletContext;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.servlet.ServletContainer;

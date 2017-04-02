@@ -8,6 +8,9 @@ import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 
 import org.bson.types.ObjectId;
+import org.dasilva.webapp.mail.bean.mail.IMAP;
+import org.dasilva.webapp.mail.bean.mail.POP3;
+import org.dasilva.webapp.mail.bean.mail.SMTP;
 import org.mongodb.morphia.annotations.Embedded;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
