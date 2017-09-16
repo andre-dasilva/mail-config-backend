@@ -2,10 +2,9 @@
 
 ## TODO
 
-* Refactor code -> improve it (maybe DAO Pattern?)
-* Improve Frontend (e.q links in overview page to directly configure)
+* Refactor code -> improve it (design patterns)
+* Improve Frontend (e.q links in overview page to directly configure, with ajax call)
 * Install npm maven plugin and -> start project with one command
-* Push new features -> maybe after last small changes create new branch
 
 ## Installation
 
